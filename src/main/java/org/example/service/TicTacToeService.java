@@ -2,11 +2,13 @@ package org.example.service;
 
 import lacombe.kata.*;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import javax.annotation.PostConstruct;
 import java.util.Set;
 
 @Service
+@SessionScope
 public class TicTacToeService {
     private TicTacToe ticTacToe;
 

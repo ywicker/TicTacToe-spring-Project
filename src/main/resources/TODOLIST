@@ -8,6 +8,11 @@ curl -H "Content-Type: application/json" -X POST http://localhost:8080/TicTacToe
 
 ---------------------------------------------------------------------------
 
+curl -H "Content-Type: application/json" --cookie "JSESSIONID=9B60DCFB6CD492DA4881E44E9860B903" -X POST -d '{"playerValue":"PLAYER_X", "coordinateDTO":{"x":"1", "y":"1"}}' http://localhost:8080/TicTacToe/play
+
+
+---------------------------------------------------------------------------
+
 - commencer Front Angular / React (DTOs partagés ?) - Session
 
 
