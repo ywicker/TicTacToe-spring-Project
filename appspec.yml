@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ec2-user/spring-app-target
+    destination: /home/ec2-user/springapp-repo
 
 permissions:
   - object: /
@@ -12,6 +12,10 @@ permissions:
     group: ec2-user
 
 hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ec2-user
   ApplicationStop:
     - location: scripts/server_stop.sh
       timeout: 20
