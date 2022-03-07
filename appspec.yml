@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /home/ec2-user/springapp-repo
+  - source: /
     destination: /home/ec2-user/spring-app-target
 
 permissions:
