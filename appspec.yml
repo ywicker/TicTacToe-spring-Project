@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 
 files:
-  - source: ./infrastructure.jar
-    destination: /home/ec2-user/spring-app
+  - source: /
+    destination: /home/ec2-user/springapp-repo
 
 permissions:
   - object: /
