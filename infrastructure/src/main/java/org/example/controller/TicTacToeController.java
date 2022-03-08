@@ -43,7 +43,7 @@ public class TicTacToeController {
                     HttpStatus.CONFLICT, e.getMessage(), e);
         }
     }
-    @GetMapping(path = "/TicTacToe/state", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/TicTacToe/status", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<GameStateDTO> state() {
         GameStateDTO gameStateDTO = gameStateDTOMapper.toGameStateDTO(ticTacToeService.state());
         return ResponseEntity.ok(gameStateDTO);
