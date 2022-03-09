@@ -62,7 +62,7 @@ public class TicTacToeController {
 
 
 
-    @GetMapping(path = "/TicTacToe/showStateGrid", produces = MediaType.ALL_VALUE)
+    @GetMapping(path = "/TicTacToe/showStateGrid2", produces = MediaType.ALL_VALUE)
     public String showStatGrid() {
         GridDTO gridDTO = gridMapper.toGridDTO(ticTacToeService.getGrid());
         String[][] cells = gridDTO.cells();
